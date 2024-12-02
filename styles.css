@@ -45,6 +45,10 @@ p{
     line-height: 2;
 }
 
+li{
+    font-size: large;
+}
+
 hr{
     border: dotted #FFE7CC 6px;
     border-bottom: none;
