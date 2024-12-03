@@ -45,8 +45,8 @@ p{
     line-height: 2;
 }
 
-#bio {
-    font-size: medium;
+body #bio {
+    font-size: large;
 }
 
 li{
