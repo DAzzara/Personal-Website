@@ -18,7 +18,9 @@
   </head>
 
   <body>
+    <!-- Top section with navbar and name -->
     <section class="color-section" id="title">
+      <!-- navbar -->
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" 
@@ -26,27 +28,25 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <!-- list of navbar items using id to move to a section -->
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#about-me">About Me</a>
               </li>
-              <!-- <li class="nav-item">
-                  <a class="nav-link" href="#skills">Skills</a>
-              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="#languages">Languages</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#education">Education</a>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#major-courses">Major Courses</a>
-              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="#jobs">Work Experience</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#awards">Awards</a>
+                <a class="nav-link" href="#Experience">Professional Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#awards">Achievements</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
@@ -68,41 +68,37 @@
     <div class="middle-container">
 
       <div >
+        <!-- the about me section -->
         <h2>About Me</h2>
         <div class="container">
           <div class="row g-0">
             <div class="col-md-4 d-flex align-items-center justify-content-center">
-              <img class="smallImg" src="images/image000000.jpeg">
+              <img class="smallImg" src="images/IMG_6492.jpeg">
             </div>
             <div class="col-md-8 d-flex align-items-center justify-content-center">
               <div>
-                <p id="bio">
-                  I am a senior at Stony Brook University working on my BS in Computer Science. I choose this major because I enjoy the 
-                  problem solving aspect of coding and the feeling of accomplishment when it works. I currently work part time as an 
-                  Administrative Assistant in a tax accountant firm and as a cashier at Stop and Shop. These experiences have given me 
-                  great time management skills, customer relations experience and other vital skills needed when working in an office. 
-                  I am also an Eagle Scout from Troop 354 in Port Jefferson Station which helped me to develop my leadership skills. 
-                  I would appreciate any consideration you may give me when you are looking at candidates to hire.
+                <p class="paragraph">
+                  I'm a Computer Science graduate from Stony Brook University with a passion for problem-solving, technology, 
+                  and finding creative solutions to challenges. Through my education, I've developed a strong foundation in 
+                  programming, software development, and working with a variety of technologies. My experiences at Walt Disney 
+                  World through the Disney College Program, Stop & Shop, and as an administrative assistant have helped me build 
+                  strong communication, teamwork, and time management skills. Earning the rank of Eagle Scout has also shaped my 
+                  leadership abilities and work ethic. I enjoy learning new things, taking on challenges, and working with others, 
+                  and I'm excited to bring both my technical knowledge and people skills to a team where I can continue to grow and 
+                  make a meaningful contribution.
                 </p>
-                <a class="btn" href="dominickazzararesume.pdf" target="_blank">Resume</a>
+                <!-- a button that opens up a popup window with an expanded about me  -->
+                <a class="btn" data-toggle="modal" data-target="#aboutMeModal">More Detail</a>
+                <!-- <a class="btn" href="dominickazzararesume.pdf" target="_blank">Resume</a> -->
               </div>
             </div>
           </div>
         </div>
       </div>
         
-      <!-- <hr>
-
-      <div id="skills">
-        <h2>Skills</h2>
-        <p>Object-Oriented Programming</p>
-        <p>Data Structures</p>
-        <p>Algorithms</p>
-      </div> -->
-
-        <!-- <hr> -->
 
       <div id="languages">
+        <!-- languades section with a list of computer languages and bootstrap progress bar -->
         <hr>
         <h2>Languages</h2>
         <br>
@@ -176,8 +172,25 @@
       </div>
 
       <div id="education">
+        <!-- education section  -->
         <hr>
         <h2>Education</h2>
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-md d-flex align-items-center justify-content-center">
+              <img class="largeImg" src="images/Graduate+Student+Organization+Logo+-+Default.jpg">
+            </div>
+            <div class="col-md d-flex align-items-center justify-content-center">
+              <div>
+                <h3>Stony Brook University:</h3>
+                <h4>January 2023 -- May 2025</h4>
+                <p>Major: Computer Science</p>
+                <p>GPA: 3.41</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
         <div class="container">
           <div class="row g-0">
             <div class="col-md d-flex align-items-center justify-content-center">
@@ -193,25 +206,10 @@
             </div>
           </div>
         </div>
-        <br>
-        <div class="container">
-          <div class="row g-0">
-            <div class="col-md d-flex align-items-center justify-content-center">
-              <img class="largeImg" src="images/Graduate+Student+Organization+Logo+-+Default.jpg">
-            </div>
-            <div class="col-md d-flex align-items-center justify-content-center">
-              <div>
-                <h3>Stony Brook University:</h3>
-                <h4>January 2023 -- Expected graduation May 2025</h4>
-                <p>Major: Computer Science</p>
-                <p>GPA: 3.41</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <div id="jobs">
+        <!-- work experience section -->
         <hr>
         <h2>Work Experience</h2>
         <div class="container">
@@ -222,7 +220,7 @@
             <div class="col-md d-flex align-items-center justify-content-center">
               <div>
                 <h3>Stop and Shop</h3>
-                <h4>Cashier</h4>
+                <h4>Cashier | Self Scan Attendant | Online Pickup Shopper</h4>
                 <p>2021 -- Present</p>
               </div>
             </div>
@@ -235,6 +233,32 @@
           <li>Ensured smooth operation of self-checkout stations, assisting customers as needed.</li>
         </ul>
         <br>
+
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-md d-flex align-items-center justify-content-center">
+              <img class="largeImg" src="images/DCP_Logo_Color.png"> 
+            </div>
+            <div class="col-md d-flex align-items-center justify-content-center">
+              <div>
+                <h3>The Walt Disney Company </h3>
+                <h3>Disney College Program</h3>
+                <h4>Quick-Service Food & Beverage Cast Member </h4>
+                <p>January -- August 2026</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul style="list-style-type: none;">
+          <li>Delivered high-quality Guest service in a fast-paced Magic Kingdom environment while maintaining Disney operational 
+            standards.</li>
+          <li>Collaborated with front-of-house and back-of-house teams to support efficient daily operations and resolve Guest 
+            concerns.</li>
+          <li>Adapted quickly to changing operational needs while demonstrating communication, teamwork, attention to detail, and 
+            problem-solving skills.</li>
+        </ul>
+        <br>
+
         <div class="container">
           <div class="row">
             <div class="col-md d-flex align-items-center justify-content-center">
@@ -244,7 +268,7 @@
               <div>
                 <h3>Ed Murphy and Company</h3>
                 <h4>Administrative Assistant</h4>
-                <p>2021 -- Present</p>
+                <p>2021 -- 2025</p>
                 
               </div>
             </div>
@@ -258,33 +282,83 @@
         </div>
       </div>
 
-        <!-- <hr>
-
-      <div id="major-courses">
-        <h2>Major Courses</h2>
-        <p>Object-Oriented Programming</p>
-        <p>Data Structures and Algorithms</p>
-        <p>Applied Linear Algebra</p>
-        <p>Calculus with Analytic Geometry II</p>
-        <p>Discrete Mathematics</p>
-      </div> -->
+      <div id="Experience">
+        <!-- professional experience section -->
+        <hr>
+        <h2>Professional Experience</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md d-flex align-items-center justify-content-center">
+              <img src="images/Walt_Disney_Imagineering_(2019).svg.webp">
+            </div>
+            <div class="col-md d-flex align-items-center justify-content-center">
+              <div>
+                <h3>Tech Behind the Dreams</h3>
+                <h4>Walt Disney Imagineering</h4>
+                <p>April 2026</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- <ul style="list-style-type: none;">
+            <li>Participated in Disney Tech Behind the Dreams, gaining exposure to how technology and engineering
+              support Walt Disney World operations and the Guest experience.</li>
+            <li>Engaged with Disney technology professionals and explored real-world applications of computer
+              science, engineering, and innovation across Disney.</li>
+          </ul> -->
+          <p class="paragraph">
+            Participating in Disney's Tech Behind the Dreams experience gave me a unique opportunity to explore the technology, 
+            creativity, and engineering that bring Disney attractions to life. One of the highlights was learning how Disney operates 
+            behind the scenes and speaking directly with Imagineers about their work and the challenges they face. Through a hands-on 
+            team project, we designed a mock section of a theme park, making decisions about everything from creative design and technical 
+            needs to budgeting and purchasing. I enjoyed seeing how different teams and departments work together to turn an idea into a 
+            real guest experience. As a Computer Science graduate, this experience helped me see how my technical background and love of 
+            problem-solving could be applied beyond traditional software development. It reinforced my interest in pursuing a career where 
+            I can combine technology, creativity, and collaboration to develop innovative solutions that make a meaningful impact.
+          </p>
+      </div>
 
       <div id="awards">
+        <!-- awards section -->
         <hr>
-        <h2>Awards</h2>
-        <h3>Eagle Scout</h3>
-        <h4>Troop 354</h4>
-        <p>August 27, 2019</p>
-        <ul style="list-style-type: none;">
-          <li>Led an Eagle Scout project as the project manager, overseeing budgeting, material procurement, 
-            and site management.</li>
-          <li>Secured necessary authorizations from troop leaders and supervised fellow scouts during the project.</li>
-          <li>Demonstrated leadership and organizational skills through effective project planning and
-            execution.</li>
-        </ul>
+        <h2>Leadership & Achievements</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+              <img class="smallImg" src="images/IMG_6670.jpeg">
+            </div>
+            <div class="col-md d-flex align-items-center justify-content-center">
+              <div>
+                <h3>Eagle Scout</h3>
+                <h4>Troop 354</h4>
+                <p>August 27, 2019</p>
+                <!-- <ul style="list-style-type: none;">
+                  <li>Led an Eagle Scout project as the project manager, overseeing budgeting, material procurement, 
+                    and site management.</li>
+                  <li>Secured necessary authorizations from troop leaders and supervised fellow scouts during the project.</li>
+                  <li>Demonstrated leadership and organizational skills through effective project planning and
+                    execution.</li>
+                </ul> -->
+                <p class="paragraph">One of my proudest accomplishments is earning the rank of Eagle Scout with Troop 354 in 
+                  Port Jefferson Station, NY. As the highest rank in Scouting America, earning Eagle Scout represents years of dedication, 
+                  leadership, community service, and perseverance. My Eagle Scout project was especially meaningful because it allowed me 
+                  to make a difference for students in the special education Life Skills program at my high school. 
+                  Many of these students faced physical disabilities and visual perception challenges that made participating 
+                  in traditional physical education classes difficult. My goal was to help create opportunities for them to enjoy 
+                  physical activity in a setting better suited to their needs. I organized a large spaghetti dinner fundraiser, 
+                  secured donated raffle prizes, and raised $4,000 to purchase adaptive physical education equipment. I then worked 
+                  alongside the Life Skills students to assemble the equipment they would use. This project was about more than earning 
+                  a rank. It taught me how to take an idea, develop a plan, bring people together, and make a meaningful impact. The 
+                  leadership, organization, and problem-solving skills I gained are lessons I continue to carry into my professional life.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="projects">
+        <!-- a table of my projects from school -->
         <hr>
         <h2>Projects</h2>
         <div class="container">
@@ -314,7 +388,8 @@
               <h3 class="mt-0">How to Upload a Video to YouTube</h3>
               <h4>This was a project for my Technical Communications class in Stony Brook. For this project I had to write technical
                 instructions for a complex technical procedure.</h4>
-              <a href="projects/How to Upload a Video to YouTube.pdf" class="btn stretched-link" target="_blank" style="font-size: large;">
+              <a href="projects/How to Upload a Video to YouTube.pdf" class="btn stretched-link" 
+              target="_blank" style="font-size: large;">
                 Link to project
               </a>
             </div>
@@ -348,4 +423,52 @@
       <p class="copyright">Dominick Azzara.</p>
     </div>
   </body>
+
+  <!-- The about me section expanded detail popup. -->
+  <div class="modal" id="aboutMeModal" tabindex="-1" role="dialog" aria-labelledby="aboutMeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="aboutMeModalLabel">About Me</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="paragraph">
+            I am a graduate of Stony Brook University with a bachelor's degree in Computer Science. 
+            I chose to pursue computer science because I've always enjoyed solving problems, figuring out how things work, 
+            and finding creative solutions to challenges. One of my favorite parts of coding is the sense of accomplishment that 
+            comes from working through a difficult problem and finally seeing everything come together.
+          </p>
+          <p class="paragraph">
+            Throughout college, I developed a strong foundation in programming, object-oriented design, data structures, algorithms, 
+            databases, and debugging. I gained hands-on experience with a variety of programming languages and technologies, 
+            including Python, Java, C, JavaScript, React, Node.js, SQL, MongoDB, Git, HTML/CSS, JSON, and HTTP. I enjoy learning 
+            new technologies and look forward to continuing to build my technical skills as I begin my career.
+          </p>
+          <p class="paragraph">
+            In addition to my education, I've had the opportunity to gain valuable experience in several different work environments. 
+            I currently work part-time at Stop & Shop, where I take on multiple roles, including cashier, self-checkout attendant, and 
+            online pickup shopper. I've also worked as an administrative assistant at a tax accounting firm and completed the Disney 
+            College Program as a Quick-Service Food & Beverage Cast Member at Walt Disney World. Each of these experiences has helped 
+            me strengthen my communication, teamwork, time management, and problem-solving skills. Working in fast-paced environments 
+            has also taught me the importance of being adaptable, dependable, and providing excellent customer service.
+          </p>
+          <p class="paragraph">
+            Outside of work and academics, one of my proudest accomplishments is earning the rank of Eagle Scout with Troop 354 in 
+            Port Jefferson Station, NY. Scouting played an important role in developing my leadership skills, teaching me the value
+            of responsibility, perseverance, and working with others toward a common goal.
+          </p>
+          <p class="paragraph">
+            I'm always looking for opportunities to learn, grow, and put my skills to work. Whether I'm tackling a coding challenge or 
+            collaborating with a team, I enjoy finding solutions and making a positive difference.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </html>
